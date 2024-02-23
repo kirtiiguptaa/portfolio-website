@@ -311,7 +311,7 @@ header.sticky{
 }
 
 .percent {
-	color: #fff;
+	color: #000;
 	text-align: end;
 	padding: 5px 20px;
 }
@@ -333,7 +333,7 @@ header.sticky{
 }
 
 .javascript {
-	width: 75%;
+	width: 60%;
 	animation: javascript 3s;
 }
 
