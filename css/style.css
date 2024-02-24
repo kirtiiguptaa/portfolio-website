@@ -514,8 +514,11 @@ header.sticky{
 	color: var(--bg-color);
 	display: flex;
 	align-items: baseline;
-	text-decoration: underline;
 	cursor: pointer;
+}
+
+.social-link a:hover {
+	text-decoration: underline;
 }
 
 .social {
