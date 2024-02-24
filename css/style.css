@@ -699,6 +699,7 @@ header.sticky{
 	}
 	.contact {
 		width: 310px;
+		padding: 70px 60px;
 	}
 }
 
@@ -709,6 +710,7 @@ header.sticky{
 	.contact {
 		width: 300px;
 		align-items: center;
+		padding: 70px 50px;
 	}
 	.top-btn {
 		padding: 6px 20px;
