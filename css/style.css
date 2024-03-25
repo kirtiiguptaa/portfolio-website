@@ -25,6 +25,7 @@
 body {
 	background: var(--bg-color);
 	color: var(--text-color);
+	overflow-x: hidden;
 }
 
 header {
