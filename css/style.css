@@ -132,6 +132,7 @@ section {
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 	grid-gap: 4rem;
+	overflow: hidden;
 }
 
 .home-text h1{
@@ -281,88 +282,33 @@ header.sticky{
 	margin: 5px;
 }
 
+.skills ul {
+	text-transform: uppercase;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+.skills h1 {
+	text-align: center;
+	font-size: var(--h2-font);
+	color: var(--main-color);
+}
+
+.skills h3 {
+	margin: 5px;
+}
+
 .skill {
-	width: 500px;
-	align-items: end;
 	margin: 30px auto;
 	color: #000;
 	padding: 20px;
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .skill li {
 	margin: 0px;
-	padding: 15px 0px;
-}
-
-.bar {
-	background: #353b48;
-	cursor: pointer;
-	display: block;
-	height: 10px;
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	border-radius: 10px;
-	overflow: hidden;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.bar:hover {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.percent {
-	color: #000;
-	text-align: end;
-	padding: 5px 20px;
-}
-
-.bar span {
-	height: 20px;
-	float: left;
-	background: var(--main-color);
-}
-
-.html {
-	width: 90%;
-	animation: html 3s;
-}
-
-.css {
-	width: 85%;
-	animation: css 3s;
-}
-
-.javascript {
-	width: 60%;
-	animation: javascript 3s;
-}
-
-@keyframes html {
-	0% {
-		width: 0%;
-	}
-	100% {
-		width: 90%;
-	}
-}
-
-@keyframes css {
-	0% {
-		width: 0%;
-	}
-	100% {
-		width: 85%;
-	}
-}
-
-@keyframes javascript {
-	0% {
-		width: 0%;
-	}
-	100% {
-		width: 60%;
-	}
+	padding: 15px 0;
+	list-style: disc;
 }
 
 .portfolio {
@@ -575,9 +521,6 @@ header.sticky{
 		padding: 80px 3%;
 		transition: .3s;
 	}
-	.skill {
-		width: 500px;
-	}
 	.contact{
 		width: 95%;
 		transition: .3s;
@@ -624,9 +567,6 @@ header.sticky{
 	.navlist.active{
 		top: 100%;
 	}
-	.skill {
-		width: 400px;
-	}
 	.contact .action form input[type="email"] {
 		width: 300px;
 		border-radius: 30px;
@@ -664,9 +604,6 @@ header.sticky{
 		text-align: center;
 		margin-bottom: 30px;
 	}
-	.skill {
-		width: 400px;
-	}
 	.portfolio-img {
 		display: block;
 	}
@@ -696,7 +633,13 @@ header.sticky{
 }
 @media (max-width: 540px){
 	.skill {
-		width: 400px;
+		margin: 20px 10px;
+	}
+	.skills .left {
+		margin-right: 35px;
+	}
+	.skills h3 {
+		font-size: 1rem;
 	}
 	.contact {
 		width: 310px;
